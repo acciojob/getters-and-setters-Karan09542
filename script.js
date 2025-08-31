@@ -15,20 +15,25 @@ class Person {
 class Student extends Person {
 	constructor(name,age){
 		super(name,age)
+		this.student = name;
 	}
 	study(){
-		this.name + " is studying"
+		return `${this.student} is studying`
 	}
 }
 
 class Teacher extends Person {
 	constructor(name, age){
 		super(name,age)
+		this.teacher = name;
 	}
 	teach(){
 		return `${this.name} is teaching`
 	}
 }
+
+const student = new Student("John", 30)
+const teacher = new Teacher("John", 30)
 
 // Do not change the code below this line
 window.Person = Person;
