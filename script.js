@@ -20,7 +20,8 @@ class Student extends Person {
 		this.student = name;
 	}
 	study(){
-		return `${this.student} is studying`
+		const role = `${this.student} is studying`
+		console.log(role)
 	}
 }
 
@@ -30,12 +31,14 @@ class Teacher extends Person {
 		this.teacher = name;
 	}
 	teach(){
-		return `${this.name} is teaching`
+		const role = `${this.name} is teaching`
+		console.log(role)
 	}
 }
 
 const student = new Student("John", 30);
 const teacher = new Teacher("John", 30);
+
 
 // Do not change the code below this line
 window.Person = Person;
